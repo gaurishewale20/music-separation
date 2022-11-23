@@ -28,6 +28,7 @@
                     <button class="but1" type="submit">Submit</button>
                 </div>
             </form>
+            <p>Note: Only .mp3 files less than 5MB accepted</p>
             {% if filename %}
             <div class="result">
                 <p> Uploaded Audio : {{ filename }} </p>
@@ -35,31 +36,31 @@
                     <source src="uploads/{{ filename }}" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
-                
+
                 <p> Vocals : </p>
                 <audio controls>
                     <source src="uploads/{{ vocalsfilename }}" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
-                
+
                 <p> Drums : </p>
                 <audio controls>
                     <source src="uploads/{{ drumsfilename }}" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
-                
+
                 <p> Bass : </p>
                 <audio controls>
                     <source src="uploads/{{ bassfilename }}" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
-                
+
                 <p> Other : </p>
                 <audio controls>
                     <source src="uploads/{{ otherfilename }}" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
-                
+
             </div>
             {% endif %}
         </div>
