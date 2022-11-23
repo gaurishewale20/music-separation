@@ -20,7 +20,7 @@ except OSError as error:
 
 @app.errorhandler(413)
 def too_large(e):
-    return "</h1> File is too large </h1> <h3><a href='/'> Try again </a></h3>", 413
+    return "<h1> File is too large </h1> <h3><a href='/'> Try again </a></h3>", 413
 
 @app.route('/', methods=['GET', 'POST'])
 def main():
