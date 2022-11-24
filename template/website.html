@@ -11,7 +11,7 @@
         <div class="maincontainer">
             <form name="form" action="/" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <input class="but1" name="audiovar" id="audioupload" type="file">
+                    <input class="but1" name="audiovar" id="audioupload" type="file" required>
                     <button class="but1" type="submit">Submit</button>
                 </div>
             </form>
@@ -26,25 +26,13 @@
 
                 <p> Vocals : </p>
                 <audio controls>
-                    <source src="uploads/{{ vocalsfilename }}" type="audio/mpeg">
+                    <source src="uploads/{{ vocals }}" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
 
-                <p> Drums : </p>
+                <p> Residual : </p>
                 <audio controls>
-                    <source src="uploads/{{ drumsfilename }}" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-
-                <p> Bass : </p>
-                <audio controls>
-                    <source src="uploads/{{ bassfilename }}" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-
-                <p> Other : </p>
-                <audio controls>
-                    <source src="uploads/{{ otherfilename }}" type="audio/mpeg">
+                    <source src="uploads/{{ residual }}" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
 
