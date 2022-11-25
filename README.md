@@ -16,7 +16,5 @@ python app.py
 Open 127.0.0.1:5000 in browser to view the website
 
 ## ToDo:
-
-- Uploaded file validation
-- Add the music-separation model
 - Modularize the code
+- Remove unused dependencies
